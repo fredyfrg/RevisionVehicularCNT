@@ -1,0 +1,1 @@
+Server=192.168.0.40; database=SIVOT; Integrated Security = false; User ID = sa; Password = Ubate*2022;
