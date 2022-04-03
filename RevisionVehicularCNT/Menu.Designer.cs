@@ -52,6 +52,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::RevisionVehicularCNT.Properties.Resources.BD;
             this.pictureBox2.Location = new System.Drawing.Point(346, 107);
             this.pictureBox2.Name = "pictureBox2";
@@ -59,9 +60,11 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 115;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::RevisionVehicularCNT.Properties.Resources.Carro2;
             this.pictureBox1.Location = new System.Drawing.Point(126, 107);
             this.pictureBox1.Name = "pictureBox1";
@@ -104,6 +107,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(573, 325);
+            this.MinimumSize = new System.Drawing.Size(573, 325);
             this.Name = "Menu";
             this.Opacity = 0.85D;
             this.Style = MetroFramework.MetroColorStyle.Black;

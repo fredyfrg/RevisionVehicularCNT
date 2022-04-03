@@ -1,1 +1,1 @@
-Server=192.168.0.40; database=SIVOT; Integrated Security = false; User ID = sa; Password = Ubate*2022;
+Server=192.168.56.1; database= CNTRevision; Integrated Security = false; User ID = admin; Password = TRIACON;

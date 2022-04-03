@@ -12,6 +12,7 @@ namespace RevisionVehicularCNT
     class basededatos
     {
         public static String ConexionSQL { get; set; }
+        public static String ConexionSQLMaster { get; set; }
 
         public static SqlConnection ObtenerConexion()
         {
@@ -28,11 +29,31 @@ namespace RevisionVehicularCNT
                 string fullFilePath = path + "conexion.txt";
                 StreamReader con = new StreamReader(fullFilePath);
                 ConexionSQL = con.ReadLine();
+                ConexionSQLMaster = ConexionSQL.Replace("CNTRevision", "Master");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message,"Error archivo conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public static String ConsultarBD(String nombrebd)
+        {
+            String status = "0";
+            try
+            {
+                SqlCommand comando = new SqlCommand(String.Format("select name from sys.sysdatabases where name='{0}';", nombrebd), basededatos.ObtenerConexion());
+                SqlDataReader leer = comando.ExecuteReader();
+                while (leer.Read())
+                {
+                    status = leer["name"].ToString();
+                }
+            }
+            catch
+            {
+                status = "0";
+            }
+            return status;
         }
     }
 }
