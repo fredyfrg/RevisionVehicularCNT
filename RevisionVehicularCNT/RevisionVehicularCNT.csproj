@@ -62,11 +62,17 @@
     <Compile Include="CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ConsultarPaciente.cs">
+    <Compile Include="ConsultarPersona.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultarPaciente.designer.cs">
-      <DependentUpon>ConsultarPaciente.cs</DependentUpon>
+    <Compile Include="ConsultarPersona.designer.cs">
+      <DependentUpon>ConsultarPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVehiculo.designer.cs">
+      <DependentUpon>ConsultarVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="exportExcel.cs" />
     <Compile Include="Logos.cs">
@@ -106,8 +112,11 @@
     <Compile Include="Vehiculos.Designer.cs">
       <DependentUpon>Vehiculos.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ConsultarPaciente.resx">
-      <DependentUpon>ConsultarPaciente.cs</DependentUpon>
+    <EmbeddedResource Include="ConsultarPersona.resx">
+      <DependentUpon>ConsultarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVehiculo.resx">
+      <DependentUpon>ConsultarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logos.resx">
       <DependentUpon>Logos.cs</DependentUpon>

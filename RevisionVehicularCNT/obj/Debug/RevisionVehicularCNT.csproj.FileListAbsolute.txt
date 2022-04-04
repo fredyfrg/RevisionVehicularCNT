@@ -25,3 +25,8 @@ C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\Revis
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.csproj.CopyComplete
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.exe
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.pdb
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.csproj.AssemblyReference.cache
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.csproj.ResolveComReference.cache
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.ConsultarVehiculo.resources
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Vehiculos.resources
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.ConsultarPersona.resources

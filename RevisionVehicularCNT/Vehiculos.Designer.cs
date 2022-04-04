@@ -1,7 +1,7 @@
 ﻿
 namespace RevisionVehicularCNT
 {
-    partial class Vehículos
+    partial class Vehiculos
     {
         /// <summary>
         /// Required designer variable.
@@ -55,9 +55,10 @@ namespace RevisionVehicularCNT
             this.metroButton1.Location = new System.Drawing.Point(368, 368);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(71, 28);
-            this.metroButton1.TabIndex = 14;
+            this.metroButton1.TabIndex = 6;
             this.metroButton1.Text = "Vehiculos";
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // bt_nuevo
             // 
@@ -65,7 +66,7 @@ namespace RevisionVehicularCNT
             this.bt_nuevo.Location = new System.Drawing.Point(240, 368);
             this.bt_nuevo.Name = "bt_nuevo";
             this.bt_nuevo.Size = new System.Drawing.Size(58, 28);
-            this.bt_nuevo.TabIndex = 13;
+            this.bt_nuevo.TabIndex = 7;
             this.bt_nuevo.Text = "Nuevo";
             this.bt_nuevo.UseSelectable = true;
             this.bt_nuevo.Click += new System.EventHandler(this.bt_nuevo_Click);
@@ -76,7 +77,7 @@ namespace RevisionVehicularCNT
             this.bt_guardar.Location = new System.Drawing.Point(304, 368);
             this.bt_guardar.Name = "bt_guardar";
             this.bt_guardar.Size = new System.Drawing.Size(58, 28);
-            this.bt_guardar.TabIndex = 12;
+            this.bt_guardar.TabIndex = 5;
             this.bt_guardar.Text = "Guardar";
             this.bt_guardar.UseSelectable = true;
             this.bt_guardar.Click += new System.EventHandler(this.bt_guardar_Click);
@@ -87,9 +88,10 @@ namespace RevisionVehicularCNT
             this.bt_editar.Location = new System.Drawing.Point(445, 368);
             this.bt_editar.Name = "bt_editar";
             this.bt_editar.Size = new System.Drawing.Size(58, 28);
-            this.bt_editar.TabIndex = 15;
+            this.bt_editar.TabIndex = 8;
             this.bt_editar.Text = "Editar";
             this.bt_editar.UseSelectable = true;
+            this.bt_editar.Click += new System.EventHandler(this.bt_editar_Click);
             // 
             // bt_eliminar
             // 
@@ -97,7 +99,7 @@ namespace RevisionVehicularCNT
             this.bt_eliminar.Location = new System.Drawing.Point(509, 368);
             this.bt_eliminar.Name = "bt_eliminar";
             this.bt_eliminar.Size = new System.Drawing.Size(58, 28);
-            this.bt_eliminar.TabIndex = 16;
+            this.bt_eliminar.TabIndex = 9;
             this.bt_eliminar.Text = "Eliminar";
             this.bt_eliminar.UseSelectable = true;
             // 
@@ -115,6 +117,7 @@ namespace RevisionVehicularCNT
             // txt_patente
             // 
             this.txt_patente.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_patente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -139,7 +142,7 @@ namespace RevisionVehicularCNT
             this.txt_patente.SelectionStart = 0;
             this.txt_patente.ShortcutsEnabled = true;
             this.txt_patente.Size = new System.Drawing.Size(155, 23);
-            this.txt_patente.TabIndex = 17;
+            this.txt_patente.TabIndex = 0;
             this.txt_patente.UseSelectable = true;
             this.txt_patente.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_patente.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,7 +185,7 @@ namespace RevisionVehicularCNT
             this.txt_modelo.SelectionStart = 0;
             this.txt_modelo.ShortcutsEnabled = true;
             this.txt_modelo.Size = new System.Drawing.Size(228, 23);
-            this.txt_modelo.TabIndex = 19;
+            this.txt_modelo.TabIndex = 2;
             this.txt_modelo.UseSelectable = true;
             this.txt_modelo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_modelo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -225,7 +228,7 @@ namespace RevisionVehicularCNT
             this.txt_año.SelectionStart = 0;
             this.txt_año.ShortcutsEnabled = true;
             this.txt_año.Size = new System.Drawing.Size(228, 23);
-            this.txt_año.TabIndex = 21;
+            this.txt_año.TabIndex = 4;
             this.txt_año.UseSelectable = true;
             this.txt_año.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_año.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,6 +247,7 @@ namespace RevisionVehicularCNT
             // txt_persona
             // 
             this.txt_persona.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_persona.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
@@ -262,13 +266,14 @@ namespace RevisionVehicularCNT
             this.txt_persona.MaxLength = 32767;
             this.txt_persona.Name = "txt_persona";
             this.txt_persona.PasswordChar = '\0';
+            this.txt_persona.ReadOnly = true;
             this.txt_persona.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txt_persona.SelectedText = "";
             this.txt_persona.SelectionLength = 0;
             this.txt_persona.SelectionStart = 0;
             this.txt_persona.ShortcutsEnabled = true;
             this.txt_persona.Size = new System.Drawing.Size(228, 23);
-            this.txt_persona.TabIndex = 23;
+            this.txt_persona.TabIndex = 3;
             this.txt_persona.UseSelectable = true;
             this.txt_persona.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_persona.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -311,14 +316,14 @@ namespace RevisionVehicularCNT
             this.txt_marca.SelectionStart = 0;
             this.txt_marca.ShortcutsEnabled = true;
             this.txt_marca.Size = new System.Drawing.Size(228, 23);
-            this.txt_marca.TabIndex = 25;
+            this.txt_marca.TabIndex = 1;
             this.txt_marca.UseSelectable = true;
             this.txt_marca.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_marca.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // lb_id
             // 
-            this.lb_id.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_id.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lb_id.AutoSize = true;
             this.lb_id.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.lb_id.Location = new System.Drawing.Point(388, 13);
@@ -337,8 +342,9 @@ namespace RevisionVehicularCNT
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 116;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Vehículos
+            // Vehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -360,7 +366,7 @@ namespace RevisionVehicularCNT
             this.Controls.Add(this.bt_guardar);
             this.Controls.Add(this.bt_editar);
             this.Controls.Add(this.bt_eliminar);
-            this.Name = "Vehículos";
+            this.Name = "Vehiculos";
             this.Text = "Vehículos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

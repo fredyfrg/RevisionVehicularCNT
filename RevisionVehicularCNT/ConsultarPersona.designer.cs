@@ -1,7 +1,7 @@
 ﻿
 namespace RevisionVehicularCNT
 {
-    partial class ConsultarPaciente
+    partial class ConsultarPersona
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@ namespace RevisionVehicularCNT
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.txt_docpaciente = new MetroFramework.Controls.MetroTextBox();
+            this.txt_patente = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.dg_consulta = new MetroFramework.Controls.MetroGrid();
             this.lb_total = new MetroFramework.Controls.MetroLabel();
@@ -54,38 +54,38 @@ namespace RevisionVehicularCNT
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // txt_docpaciente
+            // txt_patente
             // 
-            this.txt_docpaciente.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_patente.Anchor = System.Windows.Forms.AnchorStyles.Top;
             // 
             // 
             // 
-            this.txt_docpaciente.CustomButton.Image = null;
-            this.txt_docpaciente.CustomButton.Location = new System.Drawing.Point(528, 1);
-            this.txt_docpaciente.CustomButton.Name = "";
-            this.txt_docpaciente.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txt_docpaciente.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txt_docpaciente.CustomButton.TabIndex = 1;
-            this.txt_docpaciente.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txt_docpaciente.CustomButton.UseSelectable = true;
-            this.txt_docpaciente.CustomButton.Visible = false;
-            this.txt_docpaciente.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.txt_docpaciente.Lines = new string[0];
-            this.txt_docpaciente.Location = new System.Drawing.Point(89, 78);
-            this.txt_docpaciente.MaxLength = 32767;
-            this.txt_docpaciente.Name = "txt_docpaciente";
-            this.txt_docpaciente.PasswordChar = '\0';
-            this.txt_docpaciente.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_docpaciente.SelectedText = "";
-            this.txt_docpaciente.SelectionLength = 0;
-            this.txt_docpaciente.SelectionStart = 0;
-            this.txt_docpaciente.ShortcutsEnabled = true;
-            this.txt_docpaciente.Size = new System.Drawing.Size(608, 23);
-            this.txt_docpaciente.TabIndex = 8;
-            this.txt_docpaciente.UseSelectable = true;
-            this.txt_docpaciente.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txt_docpaciente.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_docpaciente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_docpaciente_KeyPress);
+            this.txt_patente.CustomButton.Image = null;
+            this.txt_patente.CustomButton.Location = new System.Drawing.Point(586, 1);
+            this.txt_patente.CustomButton.Name = "";
+            this.txt_patente.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txt_patente.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_patente.CustomButton.TabIndex = 1;
+            this.txt_patente.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_patente.CustomButton.UseSelectable = true;
+            this.txt_patente.CustomButton.Visible = false;
+            this.txt_patente.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txt_patente.Lines = new string[0];
+            this.txt_patente.Location = new System.Drawing.Point(147, 78);
+            this.txt_patente.MaxLength = 32767;
+            this.txt_patente.Name = "txt_patente";
+            this.txt_patente.PasswordChar = '\0';
+            this.txt_patente.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_patente.SelectedText = "";
+            this.txt_patente.SelectionLength = 0;
+            this.txt_patente.SelectionStart = 0;
+            this.txt_patente.ShortcutsEnabled = true;
+            this.txt_patente.Size = new System.Drawing.Size(550, 23);
+            this.txt_patente.TabIndex = 8;
+            this.txt_patente.UseSelectable = true;
+            this.txt_patente.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_patente.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_patente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_docpaciente_KeyPress);
             // 
             // metroLabel2
             // 
@@ -94,9 +94,9 @@ namespace RevisionVehicularCNT
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel2.Location = new System.Drawing.Point(15, 76);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(68, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(126, 25);
             this.metroLabel2.TabIndex = 16;
-            this.metroLabel2.Text = "Patente";
+            this.metroLabel2.Text = "N° Documento";
             // 
             // dg_consulta
             // 
@@ -189,7 +189,7 @@ namespace RevisionVehicularCNT
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
-            // ConsultarPaciente
+            // ConsultarPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,9 +201,9 @@ namespace RevisionVehicularCNT
             this.Controls.Add(this.dg_consulta);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.txt_docpaciente);
-            this.Name = "ConsultarPaciente";
-            this.Text = "Consultar Vehículos";
+            this.Controls.Add(this.txt_patente);
+            this.Name = "ConsultarPersona";
+            this.Text = "Consultar Personas";
             this.Load += new System.EventHandler(this.ConsultarPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_consulta)).EndInit();
             this.ResumeLayout(false);
@@ -214,7 +214,7 @@ namespace RevisionVehicularCNT
         #endregion
 
         private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroTextBox txt_docpaciente;
+        private MetroFramework.Controls.MetroTextBox txt_patente;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         public MetroFramework.Controls.MetroGrid dg_consulta;
         private MetroFramework.Controls.MetroLabel lb_total;

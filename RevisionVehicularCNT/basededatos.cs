@@ -57,6 +57,25 @@ namespace RevisionVehicularCNT
             return status;
         }
 
+        public static String Consultanombrepersona(String usuario)
+        {
+            String status = "0";
+            try
+            {
+                SqlCommand comando = new SqlCommand(String.Format("SELECT Identifacion + ' - ' + Nombre + ' ' + Apellido from Persona where id='{0}';", usuario), basededatos.ObtenerConexion());
+                SqlDataReader leer = comando.ExecuteReader();
+                while (leer.Read())
+                {
+                    status = leer.GetString(0);
+                }
+            }
+            catch
+            {
+                status = "0";
+            }
+            return status;
+        }
+
         public static int Insertar_Vehiculo(String Marca, String Modelo, String Patente, String Año, String PersonaId)
         {
             int registro;
@@ -77,6 +96,29 @@ namespace RevisionVehicularCNT
                 MessageBox.Show(ex.Message);
             }
             return registro;
+        }
+
+        public static int editarVehiculo(String Marca, String Modelo, String Patente, String Año, String PersonaId, String Id)
+        {
+            int registro;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("editar_Vehiculo", basededatos.ObtenerConexion());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", Id);
+                cmd.Parameters.AddWithValue("@Marca", Marca);
+                cmd.Parameters.AddWithValue("@Modelo", Modelo);
+                cmd.Parameters.AddWithValue("@Patente", Patente);
+                cmd.Parameters.AddWithValue("@Año", Año);
+                cmd.Parameters.AddWithValue("@PersonaId", PersonaId);
+                registro = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                registro = 0;
+                MessageBox.Show(ex.Message);
+            }
+            return registro;               
         }
     }
 }

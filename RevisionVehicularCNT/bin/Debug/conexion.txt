@@ -1,1 +1,1 @@
-Server=192.168.56.1; database= CNTRevision; Integrated Security = false; User ID = usuario; Password = CONTRASEÑA;
+Server=192.168.56.1; database= CNTRevision; Integrated Security = false; User ID = hsu; Password = S1st3m4s8513;

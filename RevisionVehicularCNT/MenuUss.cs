@@ -112,9 +112,9 @@ namespace RevisionVehicularCNT
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //Pacientes his = new Pacientes();
-            //his.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            //AbrirFormEnPanel(his);
+            Vehiculos vehicu = new Vehiculos();
+            vehicu.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(vehicu);
         }
 
         private void button8_Click(object sender, EventArgs e)

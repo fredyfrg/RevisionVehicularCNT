@@ -13,26 +13,26 @@ using System.Windows.Forms;
 namespace RevisionVehicularCNT
 
 {
-    public partial class ConsultarPaciente : MetroForm
+    public partial class ConsultarPersona : MetroForm
     {
-        public ConsultarPaciente(String Documento)
+        public ConsultarPersona(String Documento)
         {
             InitializeComponent();
-            txt_docpaciente.Text = Documento;
+            txt_patente.Text = Documento;
         }
 
         private void ConsultarPaciente_Load(object sender, EventArgs e)
         {
-            buscarlictotal(txt_docpaciente.Text);
+            buscarlictotal(txt_patente.Text);
         }
-        private void buscarlictotal(String docpaciente)
+        private void buscarlictotal(String patente)
         {
-            if (docpaciente.Equals(""))
+            if (patente.Equals(""))
             {
-                docpaciente = "%";
+                patente = "%";
             }
 
-            String busqueda = "select Documento, Nombres, Apellidos, Edad, Direccion, Sexo, Peso, Estatura, Fumador, añosfumador as 'Años fumando', Dieta from pacientes where documento like '" + docpaciente + "%' ; ";
+            String busqueda = "select * from Persona where Identifacion like '" + patente + "%' ; ";
             SqlCommand comando = new SqlCommand(busqueda, basededatos.ObtenerConexion());
             SqlDataAdapter MyAdapter = new SqlDataAdapter();
             MyAdapter.SelectCommand = comando;
@@ -45,7 +45,7 @@ namespace RevisionVehicularCNT
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            buscarlictotal(txt_docpaciente.Text);
+            buscarlictotal(txt_patente.Text);
         }
 
         private void metroButton2_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace RevisionVehicularCNT
 
         private void txt_docpaciente_KeyPress(object sender, KeyPressEventArgs e)
         {
-            buscarlictotal(txt_docpaciente.Text);
+            buscarlictotal(txt_patente.Text);
         }
 
         private void metroButton3_Click(object sender, EventArgs e)
