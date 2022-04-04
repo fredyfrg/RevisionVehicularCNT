@@ -15,12 +15,13 @@ C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\bin\Debug\Revis
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\bin\Debug\MetroFramework.Design.dll
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\bin\Debug\MetroFramework.dll
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\bin\Debug\MetroFramework.Fonts.dll
-C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.csproj.AssemblyReference.cache
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Logos.resources
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Menu.resources
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Inicio.resources
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.MenuUss.resources
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Properties.Resources.resources
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.csproj.GenerateResource.cache
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.csproj.CoreCompileInputs.cache
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.csproj.CopyComplete
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.exe
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.pdb
-C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Menu.resources

@@ -23,7 +23,8 @@ namespace RevisionVehicularCNT
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             basededatos.leerconexion();
-            
+            MenuUss men = new MenuUss();
+            men.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -43,7 +44,6 @@ namespace RevisionVehicularCNT
                     SqlCommand comando2 = new SqlCommand(String.Format(creartablas), connection);
                     comando2.ExecuteNonQuery();
                 }
-
                 MessageBox.Show("La base de datos CNTRevision fure creada con exito", "Iniciación de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

@@ -81,7 +81,7 @@
             this.Controls.Add(this.circularProgressBar1);
             this.MaximizeBox = false;
             this.Name = "Inicio";
-            this.Opacity = 0.85D;
+            this.Opacity = 0.45D;
             this.Style = MetroFramework.MetroColorStyle.Black;
             this.Text = "Revisión Técnica Vehicular";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;

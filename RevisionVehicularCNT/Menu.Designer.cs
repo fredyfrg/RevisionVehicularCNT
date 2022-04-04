@@ -110,7 +110,6 @@
             this.MaximumSize = new System.Drawing.Size(573, 325);
             this.MinimumSize = new System.Drawing.Size(573, 325);
             this.Name = "Menu";
-            this.Opacity = 0.85D;
             this.Style = MetroFramework.MetroColorStyle.Black;
             this.Text = "Revisión Técnica Vehicular";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
