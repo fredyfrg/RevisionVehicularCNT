@@ -37,6 +37,8 @@ namespace RevisionVehicularCNT
             bt_editar.Enabled = false;
             bt_eliminar.Enabled = false;
             cb_estado.SelectedIndex = -1;
+            txt_persona.ReadOnly = false;
+            txt_vehiculo.ReadOnly = false;
         }
 
 

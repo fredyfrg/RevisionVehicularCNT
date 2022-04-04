@@ -1,0 +1,14 @@
+USE [CNTRevision]
+GO
+CREATE PROC [dbo].[editar_Persona]
+@Id As int,
+@Identifacion As nvarchar(16),
+@Nombre As nvarchar(50),
+@Apellido As nvarchar(50)
+As
+UPDATE Persona Set
+
+Identifacion=@Identifacion,
+Nombre=@Nombre,
+Apellido=@Apellido
+Where Id=@Id

@@ -1,0 +1,18 @@
+USE [CNTRevision]
+GO
+CREATE PROC [dbo].[editar_Vehiculo]
+@Id As int,
+@Marca As nvarchar(50),
+@Modelo As nvarchar(50),
+@Patente As nvarchar(50),
+@Año As int,
+@PersonaId As int
+As
+UPDATE Vehiculo Set
+
+Marca=@Marca,
+Modelo=@Modelo,
+Patente=@Patente,
+Año=@Año,
+PersonaId=@PersonaId
+Where Id=@Id

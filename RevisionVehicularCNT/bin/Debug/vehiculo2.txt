@@ -1,0 +1,16 @@
+USE [CNTRevision]
+GO
+CREATE PROC [dbo].[insertar_Vehiculo]
+@Marca As nvarchar(50),
+@Modelo As nvarchar(50),
+@Patente As nvarchar(50),
+@Año As int,
+@PersonaId As int
+As
+INSERT INTO Vehiculo
+Values (
+@Marca,
+@Modelo,
+@Patente,
+@Año,
+@PersonaId)

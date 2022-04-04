@@ -35,6 +35,7 @@ namespace RevisionVehicularCNT
             bt_guardar.Enabled = true;
             bt_editar.Enabled = false;
             bt_eliminar.Enabled = false;
+            txt_documento.ReadOnly = false;
         }
 
         private void bt_guardar_Click(object sender, EventArgs e)

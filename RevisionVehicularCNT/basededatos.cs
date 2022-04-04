@@ -245,7 +245,7 @@ namespace RevisionVehicularCNT
             int registro;
             try
             {
-                SqlCommand cmd = new SqlCommand("Insertar_Revision", basededatos.ObtenerConexion());
+                SqlCommand cmd = new SqlCommand("editar_Revision", basededatos.ObtenerConexion());
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Id", Id);
                 cmd.Parameters.AddWithValue("@VehiculoId", VehiculoId);

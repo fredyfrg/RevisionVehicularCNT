@@ -34,7 +34,6 @@ namespace RevisionVehicularCNT
             this.Barratitulo = new System.Windows.Forms.Panel();
             this.lbNodo = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
-            this.circularPictureBox1 = new RevisionVehicularCNT.CircularPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -50,14 +49,15 @@ namespace RevisionVehicularCNT
             this.button2 = new System.Windows.Forms.Button();
             this.Panelcontenedor = new System.Windows.Forms.Panel();
             this.tmFecha = new System.Windows.Forms.Timer(this.components);
+            this.circularPictureBox1 = new RevisionVehicularCNT.CircularPictureBox();
             this.MenuUsuarios = new RevisionVehicularCNT.RJDropdownMenu(this.components);
             this.crearUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lucesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Barratitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             this.MenuUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,17 +99,6 @@ namespace RevisionVehicularCNT
             this.lbNombre.Size = new System.Drawing.Size(64, 20);
             this.lbNombre.TabIndex = 136;
             this.lbNombre.Text = "Usuario";
-            // 
-            // circularPictureBox1
-            // 
-            this.circularPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.circularPictureBox1.Image = global::RevisionVehicularCNT.Properties.Resources.usuario;
-            this.circularPictureBox1.Location = new System.Drawing.Point(648, 2);
-            this.circularPictureBox1.Name = "circularPictureBox1";
-            this.circularPictureBox1.Size = new System.Drawing.Size(54, 44);
-            this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPictureBox1.TabIndex = 135;
-            this.circularPictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -211,7 +200,7 @@ namespace RevisionVehicularCNT
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = global::RevisionVehicularCNT.Properties.Resources.personas;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 136);
+            this.button6.Location = new System.Drawing.Point(0, 75);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(250, 45);
             this.button6.TabIndex = 138;
@@ -286,7 +275,7 @@ namespace RevisionVehicularCNT
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = global::RevisionVehicularCNT.Properties.Resources.coche;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 85);
+            this.button7.Location = new System.Drawing.Point(0, 126);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(250, 45);
             this.button7.TabIndex = 129;
@@ -322,6 +311,17 @@ namespace RevisionVehicularCNT
             // tmFecha
             // 
             this.tmFecha.Tick += new System.EventHandler(this.tmFecha_Tick);
+            // 
+            // circularPictureBox1
+            // 
+            this.circularPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.circularPictureBox1.Image = global::RevisionVehicularCNT.Properties.Resources.usuario;
+            this.circularPictureBox1.Location = new System.Drawing.Point(648, 2);
+            this.circularPictureBox1.Name = "circularPictureBox1";
+            this.circularPictureBox1.Size = new System.Drawing.Size(54, 44);
+            this.circularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularPictureBox1.TabIndex = 135;
+            this.circularPictureBox1.TabStop = false;
             // 
             // MenuUsuarios
             // 
@@ -372,10 +372,10 @@ namespace RevisionVehicularCNT
             this.Load += new System.EventHandler(this.Menu_Load);
             this.Barratitulo.ResumeLayout(false);
             this.Barratitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
             this.MenuUsuarios.ResumeLayout(false);
             this.ResumeLayout(false);
 

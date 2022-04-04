@@ -1,0 +1,12 @@
+USE [CNTRevision]
+GO
+CREATE PROC [dbo].[insertar_Persona]
+@Identifacion As nvarchar(16),
+@Nombre As nvarchar(50),
+@Apellido As nvarchar(50)
+As
+INSERT INTO Persona
+Values (
+@Identifacion,
+@Nombre,
+@Apellido)

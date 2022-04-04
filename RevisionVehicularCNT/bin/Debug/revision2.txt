@@ -1,0 +1,16 @@
+USE [CNTRevision]
+GO
+CREATE PROC [dbo].[insertar_Revision]
+@VehiculoId As int,
+@Aprobado As int,
+@Observaciones As nvarchar(1000),
+@PersonaId As int,
+@Fecha_revision As datetime
+As
+INSERT INTO Revision
+Values (
+@VehiculoId,
+@Aprobado,
+@Observaciones,
+@PersonaId,
+@Fecha_revision)

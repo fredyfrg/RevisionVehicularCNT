@@ -44,6 +44,28 @@ namespace RevisionVehicularCNT
                     SqlCommand comando2 = new SqlCommand(String.Format(creartablas), connection);
                     comando2.ExecuteNonQuery();
                 }
+                try
+                {
+                    Process Pross = new Process();
+
+                    Pross.StartInfo.FileName = "sqlcmd";
+                    Pross.StartInfo.Arguments = " -S " + "." + " -i " + "persona1.txt";
+                    Pross.Start();
+                    Pross.StartInfo.Arguments = " -S " + "." + " -i " + "persona2.txt";
+                    Pross.Start();
+                    Pross.StartInfo.Arguments = " -S " + "." + " -i " + "revision1.txt";
+                    Pross.Start();
+                    Pross.StartInfo.Arguments = " -S " + "." + " -i " + "revision2.txt";
+                    Pross.Start();
+                    Pross.StartInfo.Arguments = " -S " + "." + " -i " + "vehiculo1.txt";
+                    Pross.Start();
+                    Pross.StartInfo.Arguments = " -S " + "." + " -i " + "vehiculo2.txt";
+                    Pross.Start();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
                 MessageBox.Show("La base de datos CNTRevision fure creada con exito", "Iniciación de datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
