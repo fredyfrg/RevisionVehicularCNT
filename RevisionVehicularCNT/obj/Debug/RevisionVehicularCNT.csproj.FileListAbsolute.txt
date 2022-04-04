@@ -31,3 +31,5 @@ C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\Revis
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Vehiculos.resources
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.ConsultarPersona.resources
 C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Personas.resources
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.Revision.resources
+C:\Intel\Nueva carpeta\RevisionVehicularCNT\RevisionVehicularCNT\obj\Debug\RevisionVehicularCNT.ConsultarRevision.resources

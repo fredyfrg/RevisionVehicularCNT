@@ -68,6 +68,12 @@
     <Compile Include="ConsultarPersona.designer.cs">
       <DependentUpon>ConsultarPersona.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarRevision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarRevision.designer.cs">
+      <DependentUpon>ConsultarRevision.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     <Compile Include="Personas.Designer.cs">
       <DependentUpon>Personas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Revision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revision.Designer.cs">
+      <DependentUpon>Revision.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vehiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="ConsultarPersona.resx">
       <DependentUpon>ConsultarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarRevision.resx">
+      <DependentUpon>ConsultarRevision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarVehiculo.resx">
       <DependentUpon>ConsultarVehiculo.cs</DependentUpon>
@@ -148,6 +163,9 @@
     </Compile>
     <EmbeddedResource Include="Personas.resx">
       <DependentUpon>Personas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Revision.resx">
+      <DependentUpon>Revision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vehiculos.resx">
       <DependentUpon>Vehiculos.cs</DependentUpon>
@@ -245,6 +263,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coche %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

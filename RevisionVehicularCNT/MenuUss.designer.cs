@@ -200,6 +200,7 @@ namespace RevisionVehicularCNT
             this.button8.TabIndex = 139;
             this.button8.Text = "Historial";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button6
             // 
@@ -233,6 +234,7 @@ namespace RevisionVehicularCNT
             this.button1.TabIndex = 137;
             this.button1.Text = "Revisión";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // lbFecha
             // 

@@ -222,5 +222,19 @@ namespace RevisionVehicularCNT
             persona.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(persona);
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Revision revision = new Revision();
+            revision.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(revision);
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            ConsultarRevision revision = new ConsultarRevision("");
+            revision.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(revision);
+        }
     }
 }

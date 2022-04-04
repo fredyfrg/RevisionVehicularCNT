@@ -76,6 +76,62 @@ namespace RevisionVehicularCNT
             return status;
         }
 
+        public static String Consultanombrepersona2(int usuario)
+        {
+            String status = "0";
+            try
+            {
+                SqlCommand comando = new SqlCommand(String.Format("SELECT Identifacion + ' - ' + Nombre + ' ' + Apellido from Persona where id='{0}';", usuario), basededatos.ObtenerConexion());
+                SqlDataReader leer = comando.ExecuteReader();
+                while (leer.Read())
+                {
+                    status = leer.GetString(0);
+                }
+            }
+            catch
+            {
+                status = "0";
+            }
+            return status;
+        }
+
+        public static String Consultarvehiculo(String vehiculo)
+        {
+            String status = "0";
+            try
+            {
+                SqlCommand comando = new SqlCommand(String.Format("SELECT convert(varchar,Id) + ' - ' + Patente from vehiculo where id='{0}';", vehiculo), basededatos.ObtenerConexion());
+                SqlDataReader leer = comando.ExecuteReader();
+                while (leer.Read())
+                {
+                    status = leer.GetString(0);
+                }
+            }
+            catch
+            {
+                status = "0";
+            }
+            return status;
+        }
+
+        public static String Consultarvehiculo2(int vehiculo)
+        {
+            String status = "0";
+            try
+            {
+                SqlCommand comando = new SqlCommand(String.Format("SELECT convert(varchar,Id) + ' - ' + Patente from vehiculo where id='{0}';", vehiculo), basededatos.ObtenerConexion());
+                SqlDataReader leer = comando.ExecuteReader();
+                while (leer.Read())
+                {
+                    status = leer.GetString(0);
+                }
+            }
+            catch
+            {
+                status = "0";
+            }
+            return status;
+        }
         public static int Insertar_Vehiculo(String Marca, String Modelo, String Patente, String Año, String PersonaId)
         {
             int registro;
@@ -152,6 +208,51 @@ namespace RevisionVehicularCNT
                 cmd.Parameters.AddWithValue("@Identifacion", Identifacion);
                 cmd.Parameters.AddWithValue("@Nombre", Nombre);
                 cmd.Parameters.AddWithValue("@Apellido", Apellido);
+                registro = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                registro = 0;
+                MessageBox.Show(ex.Message);
+            }
+            return registro;
+        }
+
+        public static int Insertar_Revision(int VehiculoId, int Aprobado, String Observaciones, int PersonaId, String Fecha_revision)
+        {
+            int registro;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Insertar_Revision", basededatos.ObtenerConexion());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@VehiculoId", VehiculoId);
+                cmd.Parameters.AddWithValue("@Aprobado", Aprobado);
+                cmd.Parameters.AddWithValue("@Observaciones", Observaciones);
+                cmd.Parameters.AddWithValue("@PersonaId", PersonaId);
+                cmd.Parameters.AddWithValue("@Fecha_revision", Fecha_revision);
+                registro = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                registro = 0;
+                MessageBox.Show(ex.Message);
+            }
+            return registro;
+        }
+
+        public static int editarRevision(int VehiculoId, int Aprobado, String Observaciones, int PersonaId, String Fecha_revision, String Id)
+        {
+            int registro;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Insertar_Revision", basededatos.ObtenerConexion());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", Id);
+                cmd.Parameters.AddWithValue("@VehiculoId", VehiculoId);
+                cmd.Parameters.AddWithValue("@Aprobado", Aprobado);
+                cmd.Parameters.AddWithValue("@Observaciones", Observaciones);
+                cmd.Parameters.AddWithValue("@PersonaId", PersonaId);
+                cmd.Parameters.AddWithValue("@Fecha_revision", Fecha_revision);
                 registro = cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
