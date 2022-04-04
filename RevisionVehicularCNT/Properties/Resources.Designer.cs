@@ -193,6 +193,16 @@ namespace RevisionVehicularCNT.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap personas__1_ {
+            get {
+                object obj = ResourceManager.GetObject("personas (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap revision {
             get {
                 object obj = ResourceManager.GetObject("revision", resourceCulture);

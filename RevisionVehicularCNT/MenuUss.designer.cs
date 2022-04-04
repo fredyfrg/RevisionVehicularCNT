@@ -44,12 +44,12 @@ namespace RevisionVehicularCNT
             this.crearUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lucesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button8 = new System.Windows.Forms.Button();
             this.circularPictureBox1 = new RevisionVehicularCNT.CircularPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -203,22 +203,6 @@ namespace RevisionVehicularCNT
             this.lucesToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.lucesToolStripMenuItem.Text = "Luces";
             // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = global::RevisionVehicularCNT.Properties.Resources.historial;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 339);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(250, 45);
-            this.button8.TabIndex = 139;
-            this.button8.Text = "Historial";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // circularPictureBox1
             // 
             this.circularPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -287,6 +271,22 @@ namespace RevisionVehicularCNT
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = global::RevisionVehicularCNT.Properties.Resources.historial;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(0, 339);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(250, 45);
+            this.button8.TabIndex = 139;
+            this.button8.Text = "Historial";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
@@ -349,7 +349,7 @@ namespace RevisionVehicularCNT
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(250, 45);
             this.button7.TabIndex = 129;
-            this.button7.Text = "Vehiculos";
+            this.button7.Text = "Vehículos";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

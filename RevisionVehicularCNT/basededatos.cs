@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
@@ -54,6 +55,28 @@ namespace RevisionVehicularCNT
                 status = "0";
             }
             return status;
+        }
+
+        public static int Insertar_Vehiculo(String Marca, String Modelo, String Patente, String Año, String PersonaId)
+        {
+            int registro;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Insertar_Vehiculo", basededatos.ObtenerConexion());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Marca", Marca);
+                cmd.Parameters.AddWithValue("@Modelo", Modelo);
+                cmd.Parameters.AddWithValue("@Patente", Patente);
+                cmd.Parameters.AddWithValue("@Año", Año);
+                cmd.Parameters.AddWithValue("@PersonaId", PersonaId);
+                registro = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                registro = 0;
+                MessageBox.Show(ex.Message);
+            }
+            return registro;
         }
     }
 }

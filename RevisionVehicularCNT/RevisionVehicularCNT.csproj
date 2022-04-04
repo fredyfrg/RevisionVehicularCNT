@@ -62,6 +62,12 @@
     <Compile Include="CircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ConsultarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarPaciente.designer.cs">
+      <DependentUpon>ConsultarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,15 @@
     <Compile Include="RJDropdownMenu.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Vehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehiculos.Designer.cs">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConsultarPaciente.resx">
+      <DependentUpon>ConsultarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Logos.resx">
       <DependentUpon>Logos.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +130,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vehiculos.resx">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -176,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\historial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personas %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
