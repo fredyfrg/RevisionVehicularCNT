@@ -215,5 +215,12 @@ namespace RevisionVehicularCNT
             
 
         }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Personas persona = new Personas();
+            persona.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(persona);
+        }
     }
 }

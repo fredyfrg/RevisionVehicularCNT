@@ -120,5 +120,46 @@ namespace RevisionVehicularCNT
             }
             return registro;               
         }
+
+        public static int Insertar_Persona(String Identifacion, String Nombre, String Apellido)
+        {
+            int registro;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("Insertar_Persona", basededatos.ObtenerConexion());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Identifacion", Identifacion);
+                cmd.Parameters.AddWithValue("@Nombre", Nombre);
+                cmd.Parameters.AddWithValue("@Apellido", Apellido);
+                registro = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                registro = 0;
+                MessageBox.Show(ex.Message);
+            }
+            return registro;
+        }
+
+        public static int editarPersona(String Identifacion, String Nombre, String Apellido, String Id)
+        {
+            int registro;
+            try
+            {
+                SqlCommand cmd = new SqlCommand("editar_Persona", basededatos.ObtenerConexion());
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", Id);
+                cmd.Parameters.AddWithValue("@Identifacion", Identifacion);
+                cmd.Parameters.AddWithValue("@Nombre", Nombre);
+                cmd.Parameters.AddWithValue("@Apellido", Apellido);
+                registro = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                registro = 0;
+                MessageBox.Show(ex.Message);
+            }
+            return registro;
+        }
     }
 }

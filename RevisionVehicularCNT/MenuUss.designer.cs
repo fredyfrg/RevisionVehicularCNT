@@ -34,9 +34,19 @@ namespace RevisionVehicularCNT
             this.Barratitulo = new System.Windows.Forms.Panel();
             this.lbNodo = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.Label();
+            this.circularPictureBox1 = new RevisionVehicularCNT.CircularPictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.lbFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Panelcontenedor = new System.Windows.Forms.Panel();
             this.tmFecha = new System.Windows.Forms.Timer(this.components);
@@ -44,21 +54,11 @@ namespace RevisionVehicularCNT
             this.crearUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lucesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.circularPictureBox1 = new RevisionVehicularCNT.CircularPictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.Barratitulo.SuspendLayout();
-            this.MenuVertical.SuspendLayout();
-            this.MenuUsuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.MenuVertical.SuspendLayout();
+            this.MenuUsuarios.SuspendLayout();
             this.SuspendLayout();
             // 
             // Barratitulo
@@ -99,109 +99,6 @@ namespace RevisionVehicularCNT
             this.lbNombre.Size = new System.Drawing.Size(64, 20);
             this.lbNombre.TabIndex = 136;
             this.lbNombre.Text = "Usuario";
-            // 
-            // MenuVertical
-            // 
-            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
-            this.MenuVertical.Controls.Add(this.button8);
-            this.MenuVertical.Controls.Add(this.button6);
-            this.MenuVertical.Controls.Add(this.button1);
-            this.MenuVertical.Controls.Add(this.lbFecha);
-            this.MenuVertical.Controls.Add(this.lblHora);
-            this.MenuVertical.Controls.Add(this.button10);
-            this.MenuVertical.Controls.Add(this.button7);
-            this.MenuVertical.Controls.Add(this.button2);
-            this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuVertical.Location = new System.Drawing.Point(0, 0);
-            this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(250, 592);
-            this.MenuVertical.TabIndex = 1;
-            // 
-            // lbFecha
-            // 
-            this.lbFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbFecha.AutoSize = true;
-            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lbFecha.ForeColor = System.Drawing.Color.White;
-            this.lbFecha.Location = new System.Drawing.Point(6, 460);
-            this.lbFecha.Name = "lbFecha";
-            this.lbFecha.Size = new System.Drawing.Size(224, 20);
-            this.lbFecha.TabIndex = 136;
-            this.lbFecha.Text = "Lunes, 26 de septiembre 2018";
-            // 
-            // lblHora
-            // 
-            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.Color.LightGray;
-            this.lblHora.Location = new System.Drawing.Point(20, 400);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(205, 54);
-            this.lblHora.TabIndex = 135;
-            this.lblHora.Text = "21:49:45";
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 45);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Técnicomecanica";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // Panelcontenedor
-            // 
-            this.Panelcontenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(219)))), ((int)(((byte)(222)))));
-            this.Panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panelcontenedor.Location = new System.Drawing.Point(250, 51);
-            this.Panelcontenedor.Name = "Panelcontenedor";
-            this.Panelcontenedor.Size = new System.Drawing.Size(985, 541);
-            this.Panelcontenedor.TabIndex = 2;
-            // 
-            // tmFecha
-            // 
-            this.tmFecha.Tick += new System.EventHandler(this.tmFecha_Tick);
-            // 
-            // MenuUsuarios
-            // 
-            this.MenuUsuarios.IsMainMenu = false;
-            this.MenuUsuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearUsuarioToolStripMenuItem,
-            this.modificarUsuariosToolStripMenuItem,
-            this.lucesToolStripMenuItem});
-            this.MenuUsuarios.MenuItemHeight = 8;
-            this.MenuUsuarios.MenuItemTextColor = System.Drawing.Color.Empty;
-            this.MenuUsuarios.Name = "MenuUsuarios";
-            this.MenuUsuarios.PrimaryColor = System.Drawing.Color.Empty;
-            this.MenuUsuarios.Size = new System.Drawing.Size(110, 70);
-            // 
-            // crearUsuarioToolStripMenuItem
-            // 
-            this.crearUsuarioToolStripMenuItem.Name = "crearUsuarioToolStripMenuItem";
-            this.crearUsuarioToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.crearUsuarioToolStripMenuItem.Text = "Frenos";
-            this.crearUsuarioToolStripMenuItem.Click += new System.EventHandler(this.crearUsuarioToolStripMenuItem_Click);
-            // 
-            // modificarUsuariosToolStripMenuItem
-            // 
-            this.modificarUsuariosToolStripMenuItem.Name = "modificarUsuariosToolStripMenuItem";
-            this.modificarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.modificarUsuariosToolStripMenuItem.Text = "Gases";
-            this.modificarUsuariosToolStripMenuItem.Click += new System.EventHandler(this.modificarUsuariosToolStripMenuItem_Click);
-            // 
-            // lucesToolStripMenuItem
-            // 
-            this.lucesToolStripMenuItem.Name = "lucesToolStripMenuItem";
-            this.lucesToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
-            this.lucesToolStripMenuItem.Text = "Luces";
             // 
             // circularPictureBox1
             // 
@@ -271,6 +168,23 @@ namespace RevisionVehicularCNT
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // MenuVertical
+            // 
+            this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            this.MenuVertical.Controls.Add(this.button8);
+            this.MenuVertical.Controls.Add(this.button6);
+            this.MenuVertical.Controls.Add(this.button1);
+            this.MenuVertical.Controls.Add(this.lbFecha);
+            this.MenuVertical.Controls.Add(this.lblHora);
+            this.MenuVertical.Controls.Add(this.button10);
+            this.MenuVertical.Controls.Add(this.button7);
+            this.MenuVertical.Controls.Add(this.button2);
+            this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
+            this.MenuVertical.Location = new System.Drawing.Point(0, 0);
+            this.MenuVertical.Name = "MenuVertical";
+            this.MenuVertical.Size = new System.Drawing.Size(250, 592);
+            this.MenuVertical.TabIndex = 1;
+            // 
             // button8
             // 
             this.button8.FlatAppearance.BorderSize = 0;
@@ -302,6 +216,7 @@ namespace RevisionVehicularCNT
             this.button6.TabIndex = 138;
             this.button6.Text = "Personas";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // button1
             // 
@@ -318,6 +233,30 @@ namespace RevisionVehicularCNT
             this.button1.TabIndex = 137;
             this.button1.Text = "Revisión";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lbFecha
+            // 
+            this.lbFecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbFecha.ForeColor = System.Drawing.Color.White;
+            this.lbFecha.Location = new System.Drawing.Point(6, 460);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(224, 20);
+            this.lbFecha.TabIndex = 136;
+            this.lbFecha.Text = "Lunes, 26 de septiembre 2018";
+            // 
+            // lblHora
+            // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.LightGray;
+            this.lblHora.Location = new System.Drawing.Point(20, 400);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(205, 54);
+            this.lblHora.TabIndex = 135;
+            this.lblHora.Text = "21:49:45";
             // 
             // button10
             // 
@@ -353,6 +292,68 @@ namespace RevisionVehicularCNT
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(250, 45);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Técnicomecanica";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Panelcontenedor
+            // 
+            this.Panelcontenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(219)))), ((int)(((byte)(222)))));
+            this.Panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panelcontenedor.Location = new System.Drawing.Point(250, 51);
+            this.Panelcontenedor.Name = "Panelcontenedor";
+            this.Panelcontenedor.Size = new System.Drawing.Size(985, 541);
+            this.Panelcontenedor.TabIndex = 2;
+            // 
+            // tmFecha
+            // 
+            this.tmFecha.Tick += new System.EventHandler(this.tmFecha_Tick);
+            // 
+            // MenuUsuarios
+            // 
+            this.MenuUsuarios.IsMainMenu = false;
+            this.MenuUsuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearUsuarioToolStripMenuItem,
+            this.modificarUsuariosToolStripMenuItem,
+            this.lucesToolStripMenuItem});
+            this.MenuUsuarios.MenuItemHeight = 8;
+            this.MenuUsuarios.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.MenuUsuarios.Name = "MenuUsuarios";
+            this.MenuUsuarios.PrimaryColor = System.Drawing.Color.Empty;
+            this.MenuUsuarios.Size = new System.Drawing.Size(110, 70);
+            // 
+            // crearUsuarioToolStripMenuItem
+            // 
+            this.crearUsuarioToolStripMenuItem.Name = "crearUsuarioToolStripMenuItem";
+            this.crearUsuarioToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.crearUsuarioToolStripMenuItem.Text = "Frenos";
+            this.crearUsuarioToolStripMenuItem.Click += new System.EventHandler(this.crearUsuarioToolStripMenuItem_Click);
+            // 
+            // modificarUsuariosToolStripMenuItem
+            // 
+            this.modificarUsuariosToolStripMenuItem.Name = "modificarUsuariosToolStripMenuItem";
+            this.modificarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.modificarUsuariosToolStripMenuItem.Text = "Gases";
+            this.modificarUsuariosToolStripMenuItem.Click += new System.EventHandler(this.modificarUsuariosToolStripMenuItem_Click);
+            // 
+            // lucesToolStripMenuItem
+            // 
+            this.lucesToolStripMenuItem.Name = "lucesToolStripMenuItem";
+            this.lucesToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.lucesToolStripMenuItem.Text = "Luces";
+            // 
             // MenuUss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,11 +370,11 @@ namespace RevisionVehicularCNT
             this.Load += new System.EventHandler(this.Menu_Load);
             this.Barratitulo.ResumeLayout(false);
             this.Barratitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
             this.MenuUsuarios.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
